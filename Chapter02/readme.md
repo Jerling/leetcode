@@ -30,3 +30,12 @@ You are given a target value to search. If found in the array return its index, 
 You may assume no duplicate exists in the array.
 ```
 [点击查看答案](./2.1.3.hpp)
+
+### 2.1.4 Search in Rotated Sorted Array II
+```
+描述：
+Follow up for ”Search in Rotated Sorted Array”: What if duplicates are allowed?
+Would this affect the run-time complexity? How and why?
+Write a function to determine if a given target is in the array.
+```
+[点击查看答案](./2.1.4.hpp)
