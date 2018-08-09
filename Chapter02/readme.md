@@ -46,4 +46,4 @@ Write a function to determine if a given target is in the array.
 There are two sorted arrays A and B of size m and n respectively. Find the median of the two sorted
 arrays. The overall run time complexity should be O(log(m + n)).
 ```
-
+[点击查看答案](./2.1.5.hpp)
