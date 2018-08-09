@@ -47,3 +47,12 @@ There are two sorted arrays A and B of size m and n respectively. Find the media
 arrays. The overall run time complexity should be O(log(m + n)).
 ```
 [点击查看答案](./2.1.5.hpp)
+
+### Longest Consecutive Sequence
+```
+描述：
+Given an unsorted array of integers, find the length of the longest consecutive elements sequence.
+For example, Given [100, 4, 200, 1, 3, 2], The longest consecutive elements sequence is [1,
+2, 3, 4]. Return its length: 4.
+```
+[点击查看答案](./2.1.6.hpp)
