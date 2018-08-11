@@ -84,7 +84,7 @@ A solution set is:
 (-1, -1, 2)
 ```
 [点击查看答案](./2.1.8.hpp)
-2.1.9 3Sum Closest
+### 2.1.9 3Sum Closest
 ```
 描述：
 Given an array S of n integers, find three integers in S such that the sum is closest to a given number,
@@ -93,3 +93,11 @@ For example, given array S = {-1 2 1 -4}, and target = 1.
 The sum that is closest to the target is 2. (-1 + 2 + 1 = 2).
 ```
 [点击查看答案](./2.1.9.hpp)
+
+### 2.1.11 Remove Element
+```
+描述：
+Given an array and a value, remove all instances of that value in place and return the new length.
+The order of elements can be changed. It does't matter what you leave beyond the new length.
+```
+[点击查看答案](./2.1.11.hpp)
