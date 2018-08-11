@@ -4,9 +4,7 @@
 #include <unordered_map>
 
 /* 自己的思路：
- * 找每个值后面是否存在 targe-nums[i] 这个值
- * 理论上时间复杂度为n^2, 空间复杂度 1
- * 因为find的原型是一个个找，并不是二分查找：
+ * 先排序，然后定位前面和后面的位置，再找中间的值是否满足3Sum
  * template<class InputIterator, class T>
  *  InputIterator find (InputIterator first, InputIterator last, const T& val)
  * {
@@ -44,11 +42,9 @@ class mySolution{
 };
 
 
-/* 用一个哈希表mapping来记录每个元素对应的下标；
- * unordered_map对应哈希表，查找时间复杂度为 1
- * map 对应红黑树，查找时间复杂度为 log(n)
+/* 排序然后左右夹逼
  * 代码1
- * T : n，S；1
+ * T : n^2，S；1
  * */
 class Solution_1{
   public:
