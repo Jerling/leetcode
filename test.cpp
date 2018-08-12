@@ -4,11 +4,19 @@
 
 int main(void)
 {
-  std::vector<int> A1 = {-1,0,1,2,-3,4};
+  std::vector<int> A1 = {1,2,3,4};
   std::vector<int> A2 = {100, 4, 200, 1, 3, 2};
-  std::cout << Solution_1().threeSumClosest(A1) << std::endl;
-  std::cout << mySolution().threeSumClosest(A2) << std::endl;
-  std::cout << "This is emacs!!!!\n";
+
+  mySolution().NextPermutation(A1);
+  for (auto i = A1.begin(); i != A2.end(); ++i) {
+      std::cout << *i << std::endl;
+  }
+
+  // std::cout << mySolution().removeElement(A1, 1) << std::endl;
+  // std::cout << Solution_1().removeElement(A1, 1) << std::endl;
+  // std::cout << Solution_2().removeElement(A1, 1) << std::endl;
+  // std::cout << Solution_1().threeSumClosest(A1) << std::endl;
+  // std::cout << mySolution().threeSumClosest(A2) << std::endl;
   // for(auto &i : Solution_1().threeSum(A1))
     // std::cout << i << " ";
   // std::cout << std::endl;

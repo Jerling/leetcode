@@ -101,3 +101,19 @@ Given an array and a value, remove all instances of that value in place and retu
 The order of elements can be changed. It does't matter what you leave beyond the new length.
 ```
 [点击查看答案](./2.1.11.hpp)
+
+### 2.1.12
+```
+描述：
+Implement next permutation, which rearranges numbers into the lexicographically next greater permutation
+of numbers.
+If such arrangement is not possible, it must rearrange it as the lowest possible order (ie, sorted in ascending
+order).
+The replacement must be in-place, do not allocate extra memory.
+Here are some examples. Inputs are in the left-hand column and its corresponding outputs are in the
+right-hand column.
+1,2,3 → 1,3,2
+3,2,1 → 1,2,3
+1,1,5 → 1,5,12.1.12
+```
+[点击查看答案](./2.1.12.hpp)
