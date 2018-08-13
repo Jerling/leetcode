@@ -5,7 +5,7 @@
 int main(void)
 {
     std::vector<std::vector<int> > A = {{1,2,3},{4,5,6},{7,8,9}};
-    visit(A);
+    // visit(A);
     mySolution().RotateImage(A);
     visit(A);
 

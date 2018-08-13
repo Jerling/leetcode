@@ -10,6 +10,12 @@ void visit(auto A){
         std::cout << "\n";
     }
 }
+void visit(std::vector<int> A){
+    for(auto i : A){
+        std::cout << "# " << i << " ";
+    }
+    std::cout << "\n";
+}
 /*
   自己的思路：
   先转置，在左右调换
@@ -18,7 +24,6 @@ class mySolution{
 public:
     void RotateImage(std::vector<std::vector<int> > &vec){
         transpose(vec);
-        visit(vec);
         swapcols(vec);
     }
 private:
@@ -26,15 +31,18 @@ private:
     void transpose(std::vector<std::vector<T> >& vec){
         const int length = vec.size();
         for (int i=0; i<length; i++) {
-            for (int j=0; j<length; j++) {
+            for (int j=i; j<length; j++) {
                 std::swap(vec[i][j], vec[j][i]);
             }
         }
     }
     template<typename T>
     void swapcols(std::vector<std::vector<T> > &vec){
-        for (auto it : vec) {
-            reverse(it.begin(), it.end());
+        int end = vec.size();
+        for (int it = 0;it < end; ++it) {
+            // visit(vec[it]);
+            reverse(vec[it].begin(), vec[it].end());
+            // visit(vec[it]);
         }
     }
 };
