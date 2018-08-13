@@ -133,3 +133,12 @@ Given n and k, return the kth permutation sequence.
 Note: Given n will be between 1 and 9 inclusive.
 ```
 [点击查看答案](./2.1.13.hpp)
+
+### 2.1.16 Rotate Image
+```
+描述
+You are given an n × n 2D matrix representing an image.
+Rotate the image by 90 degrees (clockwise).
+Follow up: Could you do this in-place?
+```
+[点击查看答案](./2.1.16.hpp)
