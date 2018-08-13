@@ -6,7 +6,8 @@ int main(void)
 {
     std::vector<std::vector<int> > A = {{1,2,3},{4,5,6},{7,8,9}};
     // visit(A);
-    mySolution().RotateImage(A);
+    // mySolution().RotateImage(A);
+    Solution_2().RotateImage(A);
     visit(A);
 
     // auto vec = mySolution().PermutaionSequence(3,4);
