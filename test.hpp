@@ -1,74 +1,91 @@
 #include <iostream>
 #include <vector>
 #include <algorithm>
+#include <string>
 
-/* 分析：https://www.cnblogs.com/houkai/p/3675270.html
-   全排序：
-   从n个不同元素中任取m（m≤n）个元素，按照一定的顺序排列起来，叫做从n个不同元素中取出m个元素的一个排列。当m=n时所有的排列情况叫全排列。例如n=3，全排序为：123、132、213、231、312、321共6种。
-   字典序法：
-   对给定的字符集中的字符规定了一个先后关系，在此基础上规定两个全排列的先后是：从左到右逐个比较对应的字符大小。字符集{1,2,3}，较小的数字较先，这样按字典序生成的全排列即：123、132、213、231、312、321。
-   现在假设输入全排序中的一串数字，要求得到它在字典序全排列中对应的下一个排列数。比如：输入123输出132，输入12435输出12453。
+void visit(auto A){
+    for(auto i : A){
+        for(auto j : i)
+            std::cout << j << " ";
+        std::cout << "\n";
+    }
+}
+/*
+  自己的思路：
+  先转置，在左右调换
  * */
 class mySolution{
-  public:
-    void NextPermutation(std::vector<int> &vec){
-        int length = vec.size();
-        int i;
-        if (length <= 1) return;
-        for (i = length-2; i > 0; i--) {
-            // std::cout << "i = " << vec[i] << std::endl;
-            if (vec[i+1] > vec[i]) {
-                break;
+public:
+    void RotateImage(std::vector<std::vector<int> > &vec){
+        transpose(vec);
+        visit(vec);
+        swapcols(vec);
+    }
+private:
+    template<typename T>
+    void transpose(std::vector<std::vector<T> >& vec){
+        const int length = vec.size();
+        for (int i=0; i<length; i++) {
+            for (int j=0; j<length; j++) {
+                std::swap(vec[i][j], vec[j][i]);
             }
         }
-        if (i == 0) {
-            return;
-        }
-        for(int j=length-1; j>i; j--){
-            if(vec[j] > vec[i]){
-                std::swap(vec[i], vec[j]);
-                break;
-            }
-        }
-        ++i; // 只要转置 i 后边的
-        for(int j=length-1; j > i; j--){
-            std::swap(vec[i],vec[j]);
+    }
+    template<typename T>
+    void swapcols(std::vector<std::vector<T> > &vec){
+        for (auto it : vec) {
+            reverse(it.begin(), it.end());
         }
     }
 };
 
-/* 代码1
+/*
+  分析：
+  1）简单暴力解决：如自己的思路，调用 k-1 次NextPermutation()
+  1) 利用康托编码思想，假设有 n 个不重要的元素，第 k 个排序是 a1,a2,a3,...,an,那么a1是哪个位置呢？
+  把 a1 去掉，那么剩下的排列为 a2,a3,...,an,共n-1个元素。共有 (n-1)! 个排列。
+  于是就可以知道 : a1 = k/(n-1)!。同理：
+  k2 = k%(n-1)! a2 = k2/(n-2)!
+  k3 = k%(n-2)! a3 = k3/(n-4)!
+  ...
+  kn-1 = kn-2%2! an-1 = kn-1/1!
+  an = 0
+
+  代码1
    T: n S:1
 */
-class Solution_1
-{
+
+class Solution_1 {
 public:
-    void NextPermutation(std::vector<int> &vec){
-        next_Permutation(vec.begin(), vec.end());
+    std::string PermutaionSequence(int n, int k) {
+        std::string s(n, '0');
+        std::string result;
+        for (int i = 0; i < n; ++i)
+            s[i] += i + 1;
+        return kth_permutation(s, k);
     }
 private:
-    template<typename BidiIt>
-    bool next_Permutation(BidiIt first, BidiIt last){
-        const auto rfirst = std::reverse_iterator<BidiIt>(last);
-        // 反向迭代器，便于反方向访问
-        const auto rlast = std::reverse_iterator<BidiIt>(first);
-
-        auto pivot = next(rfirst); // 取最后一个数值(因为没有值，所以取前一个)
-        while (pivot != rlast && *pivot >= *prev(pivot)) {
-            ++pivot;               // 找到第一次出现变小的位置
+    int factorial(int n) {
+        // n!
+        int result = 1;
+        for (int i = 1; i <= n; ++i)
+            result *= i;
+        return result;
+    }
+// seq 已经排好序
+    template<typename Sequence>
+    Sequence kth_permutation(const Sequence &seq, int k) {
+        const int n = seq.size();
+        Sequence S(seq);
+        Sequence result;
+        int base = factorial(n - 1);
+        --k; // 康托编码从0开始
+        for (int i = n - 1; i > 0; k %= base, base /= i, --i) {
+            auto a = next(S.begin(), k / base);
+            result.push_back(*a);
+            S.erase(a);
         }
-        if (pivot == rlast) {      // 检查是否到第一个位置
-            reverse(rfirst, rlast);
-        }
-        // 找到从尾部rfirst开始找第一次出现变大的位置
-        std::cout << *pivot << std::endl;
-        auto change = find_if(rfirst, pivot, std::bind1st(std::less<int>(), *pivot));
-        // bind1st(const Fn2& Func,const Ty& left);  //1st指:传进来的参数应该放左边，也就是第1名
-        // bind2nd(const Fn2& Func,const Ty& right); //2nd指:传进来的参数应该放右边,也就是第2名
-        std::cout << *change<< std::endl;
-        std::swap(*change, *pivot);
-        reverse(rfirst, pivot);  // 反转后边的部分
-
-        return true;
+        result.push_back(S[0]); // 最后一个
+        return result;
     }
 };

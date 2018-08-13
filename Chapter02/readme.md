@@ -117,3 +117,19 @@ right-hand column.
 1,1,5 → 1,5,12.1.12
 ```
 [点击查看答案](./2.1.12.hpp)
+
+### 2.1.13 Permutation Sequence
+```
+描述：
+The set [1,2,3,􀄉,n] contains a total of n! unique permutations.
+By listing and labeling all of the permutations in order, We get the following sequence (ie, for n = 3):
+"123"
+"132"
+"213"
+"231"
+"312"
+"321"
+Given n and k, return the kth permutation sequence.
+Note: Given n will be between 1 and 9 inclusive.
+```
+[点击查看答案](./2.1.13.hpp)
