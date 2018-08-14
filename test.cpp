@@ -10,7 +10,8 @@ int main(void)
     ListNode *l2 = creatList(A2);
     visit(l1);
     visit(l2);
-    ListNode *reslut = mySolution().addTwoNumbers(l1,l2);
+    // ListNode *reslut = mySolution().addTwoNumbers(l1,l2);
+    ListNode *reslut = Solution_1().addTwoNumbers(l1,l2);
     visit(reslut);
     return 0;
 }
