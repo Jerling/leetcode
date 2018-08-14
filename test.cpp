@@ -10,8 +10,8 @@ int main(void)
     ListNode *l2 = creatList(A2);
     visit(l1);
     visit(l2);
-    // ListNode *reslut = mySolution().addTwoNumbers(l1,l2);
-    ListNode *reslut = Solution_1().addTwoNumbers(l1,l2);
-    visit(reslut);
+    // ListNode* result = mySolution().ReverseLinkedList2(l2,2,4);
+    ListNode* result = Solution_1().ReverseLinkedList2(l2,2,4);
+    visit(result);
     return 0;
 }

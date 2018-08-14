@@ -156,6 +156,7 @@ Given a number represented as an array of digits, plus one to the number.
 You are climbing a stair case. It takes n steps to reach to the top.
 Each time you can either climb 1 or 2 steps. In how many distinct ways can you climb to the top?
 ```
+[点击查看答案](./2.1.18.hpp)
 ## 2.2 单链表
 单链表定义：
 ```cpp
@@ -173,3 +174,13 @@ order and each of their nodes contain a single digit. Add the two numbers and re
 Input: (2 -> 4 -> 3) + (5 -> 6 -> 4)
 Output: 7 -> 0 -> 8
 ```
+[点击查看答案](./2.2.1.hpp)
+
+### 2.2.2 Reverse Linked List ||
+```
+Reverse a linked list from position m to n. Do it in-place and in one-pass.
+For example: Given 1->2->3->4->5->nullptr, m = 2 and n = 4,
+return 1->4->3->2->5->nullptr.
+Note: Given m, n satisfy the following condition: 1 ≤ m ≤ n ≤ length of list.
+```
+[点击查看答案](./2.2.2.hpp)
