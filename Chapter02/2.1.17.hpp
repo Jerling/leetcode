@@ -67,13 +67,13 @@ private:
 */
 class Solution_2 {
 public:
-    vector<int> plusOne(vector<int> &digits) {
+    std::vector<int> plusOne(std::vector<int> &digits) {
         add(digits, 1);
         return digits;
     }
 private:
 // 0 <= digit <= 9
-    void add(vector<int> &digits, int digit) {
+    void add(std::vector<int> &digits, int digit) {
         int c = digit; // carry,进位
         for_each(digits.rbegin(), digits.rend(), [&c](int &d){
             d += c;

@@ -4,17 +4,20 @@
 
 int main(void)
 {
-    std::vector<std::vector<int> > A = {{1,2,3},{4,5,6},{7,8,9}};
+    std::vector<std::vector<int> > A = {{1,2,3},{4,5,6},{7,7,9}};
+
+    std::cout << Solution_1().climbStairs(5) << std::endl;
+    std::cout << Solution_2().climbStairs(5) << std::endl;
+    // mySolution().PlusOne(A[2]);
+    // visit(A[2]);
+    // Solution_1().PlusOne(A[2]);
+    // visit(A[2]);
     // visit(A);
     // mySolution().RotateImage(A);
-    Solution_2().RotateImage(A);
-    visit(A);
+    // Solution_2().RotateImage(A);
+    // visit(A);
 
-    // auto vec = mySolution().PermutaionSequence(3,4);
-    // for (auto it = vec.begin(); it != vec.end(); ++it) {
-    //   std::cout << *it << " ";
-    // }
-    // std::cout << Solution_1().PermutaionSequence(3,4);
+    // std::cout << Solution_1().getPermutation(3,4);
     // mySolution().NextPermutation(A1);
     // // Solution_1().NextPermutation(A1);
     // for (auto i = A1.begin(); i != A1.end(); ++i) {

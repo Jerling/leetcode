@@ -143,10 +143,18 @@ Follow up: Could you do this in-place?
 ```
 [点击查看答案](./2.1.16.hpp)
 
-### Plus One
+### 2.1.17 Plus One
 ```
 描述
 Given a number represented as an array of digits, plus one to the number.
 ```
 [点击查看答案](./2.1.17.hpp)
+
+### 2.1.18 Climbing Stairs
+```
+描述：
+You are climbing a stair case. It takes n steps to reach to the top.
+Each time you can either climb 1 or 2 steps. In how many distinct ways can you climb to the top?
+```
+
 
