@@ -142,3 +142,11 @@ Rotate the image by 90 degrees (clockwise).
 Follow up: Could you do this in-place?
 ```
 [点击查看答案](./2.1.16.hpp)
+
+### Plus One
+```
+描述
+Given a number represented as an array of digits, plus one to the number.
+```
+[点击查看答案](./2.1.17.hpp)
+
