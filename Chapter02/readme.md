@@ -184,3 +184,22 @@ return 1->4->3->2->5->nullptr.
 Note: Given m, n satisfy the following condition: 1 ≤ m ≤ n ≤ length of list.
 ```
 [点击查看答案](./2.2.2.hpp)
+
+### 2.2.3 Partition List
+```
+Given a linked list and a value x, partition it such that all nodes less than x come before nodes greater
+than or equal to x.
+You should preserve the original relative order of the nodes in each of the two partitions.
+For example, Given 1->4->3->2->5->2 and x = 3, return 1->2->2->4->3->5.
+```
+[点击查看答案](./2.2.3.hpp)
+
+### 2.2.4 Remove Duplicates from Sorted List
+```
+Given a sorted linked list, delete all duplicates such that each element appear only once.
+For example,
+Given 1->1->2, return 1->2.
+Given 1->1->2->3->3, return 1->2->3.
+```
+[点击查看答案](./2.2.4.hpp)
+
