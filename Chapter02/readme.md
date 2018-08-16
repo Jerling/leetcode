@@ -221,7 +221,7 @@ For example: Given 1->2->3->4->5->nullptr and k = 2, return 4->5->1->2->3->nullp
 ```
 [点击查看答案](./2.2.6.hpp)
 
-### Remove Nth Node From End of List ###
+### 2.2.7 Remove Nth Node From End of List ###
 ```
 描述
 Given a linked list, remove the n-th node from the end of list and return its head.
@@ -232,3 +232,13 @@ Given n will always be valid.
 Try to do this in one pass.
 ```
 [点击查看答案](./2.2.7.hpp)
+
+### 2.2.8 Swap Nodes in Pairs ###
+
+```
+描述
+Given a linked list, swap every two adjacent nodes and return its head.
+For example, Given 1->2->3->4, you should return the list as 2->1->4->3.
+Your algorithm should use only constant space. You may not modify the values in the list, only nodes itself can be changed.
+```
+[点击查看答案](./2.2.8.hpp)

@@ -10,6 +10,6 @@ int main(void)
     ListNode *l2 = creatList(A2);
     visit(l1);
     visit(l2);
-    visit(mySolution().RotateList(l1, 2));
+    visit(mySolution().RemoveNthNodeFromEndofList(l1, 3));
     return 0;
 }
