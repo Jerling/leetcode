@@ -211,4 +211,24 @@ For example,
 Given 1->2->3->3->4->4->5, return 1->2->5.
 Given 1->1->1->2->3, return 2->3.
 ```
-[点击查看答案](./2.2.4.hpp)
+[点击查看答案](./2.2.5.hpp)
+
+### 2.2.6 Rotate List
+```
+描述
+Given a list, rotate the list to the right by k places, where k is non-negative.
+For example: Given 1->2->3->4->5->nullptr and k = 2, return 4->5->1->2->3->nullptr.
+```
+[点击查看答案](./2.2.6.hpp)
+
+### Remove Nth Node From End of List ###
+```
+描述
+Given a linked list, remove the n-th node from the end of list and return its head.
+For example, Given linked list: 1->2->3->4->5, and n = 2.
+After removing the second node from the end, the linked list becomes 1->2->3->5.
+Note:
+Given n will always be valid.
+Try to do this in one pass.
+```
+[点击查看答案](./2.2.7.hpp)

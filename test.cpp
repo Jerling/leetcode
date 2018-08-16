@@ -10,6 +10,6 @@ int main(void)
     ListNode *l2 = creatList(A2);
     visit(l1);
     visit(l2);
-    visit(Solution_2().RemoveDulicates2(l1));
+    visit(mySolution().RotateList(l1, 2));
     return 0;
 }
