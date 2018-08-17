@@ -10,7 +10,6 @@ int main(void)
     ListNode *l2 = creatList(A2);
     visit(l1);
     visit(l2);
-    visit(mySolution().SwapNodesinPairs(l2));
-    // visit(Solution().removeNthFromEnd(l1,2 ));
+    visit(mySolution().ReverseNodesKGroup(l2,2));
     return 0;
 }

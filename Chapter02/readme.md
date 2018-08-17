@@ -242,3 +242,16 @@ For example, Given 1->2->3->4, you should return the list as 2->1->4->3.
 Your algorithm should use only constant space. You may not modify the values in the list, only nodes itself can be changed.
 ```
 [点击查看答案](./2.2.8.hpp)
+
+### 2.2.9 Reverse Nodes in k-Group ###
+
+```
+描述
+Given a linked list, reverse the nodes of a linked list k at a time and return its modified list.
+If the number of nodes is not a multiple of k then left-out nodes in the end should remain as it is.
+You may not alter the values in the nodes, only nodes itself may be changed.
+Only constant memory is allowed.
+For example, Given this linked list: 1->2->3->4->5
+For k = 2, you should return: 2->1->4->3->5
+For k = 3, you should return: 3->2->1->4->5
+```
