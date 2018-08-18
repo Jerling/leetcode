@@ -271,3 +271,11 @@ Given a linked list, determine if it has a cycle in it.
 Follow up: Can you solve it without using extra space?
 [点击查看答案](./2.2.11.hpp)
 ```
+
+### 2.2.12 Linked List Cycle II ###
+```
+描述
+Given a linked list, return the node where the cycle begins. If there is no cycle, return null.
+Follow up: Can you solve it without using extra space?
+```
+[点击查看答案](./2.2.12.hpp)
