@@ -279,3 +279,32 @@ Given a linked list, return the node where the cycle begins. If there is no cycl
 Follow up: Can you solve it without using extra space?
 ```
 [点击查看答案](./2.2.12.hpp)
+
+### 2.2.13 Reorder List ###
+```
+描述
+Given a singly linked list L: L_0 \rightarrow L_1 \rightarrow \cdots \rightarrow L_{n-1} \rightarrow L_nL:L
+​0
+​​ →L
+​1
+​​ →⋯→L
+​n−1
+​​ →L
+​n
+​​ , reorder it to: L_0 \rightarrow L_n \rightarrow L_1 \rightarrow L_{n-1} \rightarrow L_2 \rightarrow L_{n-2} \rightarrow \cdotsL
+​0
+​​ →L
+​n
+​​ →L
+​1
+​​ →L
+​n−1
+​​ →L
+​2
+​​ →L
+​n−2
+​​ →⋯
+You must do this in-place without altering the nodes' values.
+
+For example, Given {1,2,3,4}, reorder it to {1,4,2,3}.
+```
