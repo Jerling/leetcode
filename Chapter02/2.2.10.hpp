@@ -40,38 +40,39 @@ ListNode* creatList(const std::vector<int> vec){
     ListNode head(-1);
     ListNode* result = &head;
     for_each(vec.begin(), vec.end(), [&result](auto n){result->next = new ListNode(n);result=result->next;});
-    result->next = head.next;
     return head.next;
 }
 
 /*
   分析：
-  题目中没有说不能改变链表的值，把访问过的记为-1
 */
-// 时间复杂度O(n)，空间复杂度O(1)
-class mySolution {
-public:
-    bool LinkedListCycle(ListNode *head){
-        for(ListNode *p=head; p ; p = p->next){
-            if(p->val == -1) return true;
-            else p->val = -1;
-        }
-        return false;
-    }
-};
-
-// Linked List Cycle
-// 时间复杂度O(n)，空间复杂度O(1)
+// Copy List with Random Pointer
+// 两遍扫描，时间复杂度O(n)，空间复杂度O(1)
 class Solution {
 public:
-    bool hasCycle(ListNode *head) {
-        // 设置两个指针，一个快一个慢
-        ListNode *slow = head, *fast = head;
-        while (fast && fast->next) {
-            slow = slow->next;
-            fast = fast->next->next;
-            if (slow == fast) return true;
+    RandomListNode *copyRandomList(RandomListNode *head) {
+        for (RandomListNode* cur = head; cur != nullptr; ) {
+            RandomListNode* node = new RandomListNode(cur->label);
+            node->next = cur->next;
+            cur->next = node;
+            cur = node->next;
         }
-        return false;
+
+        for (RandomListNode* cur = head; cur != nullptr; ) {
+            if (cur->random != NULL)
+                cur->next->random = cur->random->next;
+            cur = cur->next->next;
+        }
+
+        // 分拆两个单链表
+        RandomListNode dummy(-1);
+        for (RandomListNode* cur = head, *new_cur = &dummy;
+             cur != nullptr; ) {
+            new_cur->next = cur->next;
+            new_cur = new_cur->next;
+            cur->next = cur->next->next;
+            cur = cur->next;
+        }
+        return dummy.next;
     }
 };

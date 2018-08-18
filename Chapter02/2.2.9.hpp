@@ -35,47 +35,6 @@ ListNode* creatList(const std::vector<int> vec){
     for_each(vec.begin(), vec.end(), [&result](auto n){result->next = new ListNode(n);result=result->next;});
     return head.next;
 }
-/*
-  分析:
-  直接删除
-  T: n, S: 1
-*/
-class mySolution
-{
-public:
-    ListNode *ReverseNodesKGroup(ListNode *l, int k){
-        if (!l || !l->next) return l;
-        ListNode head(-1);head.next = l;
-        ListNode *pprev = l, *prev = l, *tail = prev->next, *tmp;
-        bool first = true;
-        for ( ; tail;){
-            bool con =  knext(tail,k-1)==nullptr?false:true;
-            for (int i=0; i<k-1 && tail && con; ++i) {
-                visit(tail);
-                if(tail == prev)
-                    tail = tail->next;
-                visit(tail);
-                tmp = tail->next;
-                tail->next = prev;
-                prev->next = tmp;
-                prev = tail;
-                tail = tmp;
-            }
-            pprev->next = tail;
-            for(;pprev->next!=tail;pprev=pprev->next);
-            if (first) head.next = prev;
-            prev = tail;
-            first = false;
-        }
-        return head.next;
-    }
-private:
-    ListNode *knext(ListNode *p, int k){
-        ListNode *tmp = p;
-        for(int i=0; i<k&&tmp; ++i,tmp=tmp->next);
-        return tmp;
-    }
-};
 
 /*
   分析：

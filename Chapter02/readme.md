@@ -254,4 +254,20 @@ Only constant memory is allowed.
 For example, Given this linked list: 1->2->3->4->5
 For k = 2, you should return: 2->1->4->3->5
 For k = 3, you should return: 3->2->1->4->5
+[点击查看答案](./2.2.9.hpp)
+```
+### 2.2.10 Copy List with Random Pointer
+```
+描述
+A linked list is given such that each node contains an additional random pointer which could point to any node in the list or null.
+Return a deep copy of the list.
+```
+[点击查看答案](./2.2.10.hpp)
+
+### 2.1.11 Linked List Cycle ###
+```
+描述
+Given a linked list, determine if it has a cycle in it.
+Follow up: Can you solve it without using extra space?
+[点击查看答案](./2.2.11.hpp)
 ```
