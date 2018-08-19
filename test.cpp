@@ -1,16 +1,13 @@
-#include <vector>
 #include "test.hpp"
 
 int main(void)
 {
-    std::vector<int> A1 = {1,2,3,4,5,6,6};
-    std::vector<int> A2 = {5,6,4,5};
-    ListNode *l1 = creatList(A1);
-    ListNode *l2 = creatList(A2);
-    visit(l1);
-    // visit(l2);
-    // visit(mySolution().ReoderList(l1));
-    Solution().reorderList(l1);
-    visit(l1);
+    std::string str1 = {"A man, a plan, a canal: Panama"};
+    std::string str2 = {"race a car"};
+    std::cout << str1 << "\n" << str2 << std::endl;
+    std::cout << MySolution().ValidPalindrome(str1) << std::endl;
+    std::cout << MySolution().ValidPalindrome(str2) << std::endl;
+    std::cout << Solution().isPalindrome(str2) << std::endl;
+
     return 0;
 }
