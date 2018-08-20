@@ -2,41 +2,33 @@
 #include <algorithm>
 #include <string>
 #include <ctype.h>
-#include <clocale>
+#include <cmath>
+#include <limits.h>
 
 /*
   分析：
-  一个一个比较
+  从后往前读，用ascll相减得到int值
 */
-// T:n, S:1
 class MySolution
 {
 public:
-    bool ValidPalindrome(const std::string str){
-        const int length = str.size();
-        for (int i = 0,j=0; i < length/2 ; i++,j++) {
-            for(;!std::isalpha(str[i]);i++);
-            for(;!std::isalpha(str[length-j-1]);j++);
-            // std::cout << str[i] << " " << str[length-j-1] << std::endl;
-            if(tolower(str[i]) != tolower(str[length-j-1])) return false;
+    int atoi(const std::string str){
+        auto end = str.end();
+        while(!isdigit(*end)) std::cout<<*end,end=prev(end);
+        auto begin = str.begin();
+        while(!isdigit(*begin) || *end!='-') begin=next(begin);
+        int n = 0, result = 0, tmp;
+        while(begin != end){
+            tmp = std::pow(10, n) * int(*end - '0');
+            if(*begin == '-' && INT_MAX - result < tmp) return 0;
+            if(INT_MAX - result <= tmp) return 0;
+            result += tmp;
+            end=prev(end);
         }
-        return true;
-    }
-};
-
-// Valid Palindrome
-// 时间复杂度O(n)，空间复杂度O(1)
-class Solution {
-public:
-    bool isPalindrome(std::string s) {
-        std::transform(s.begin(), s.end(), s.begin(), ::tolower);
-        auto left = s.begin(), right = prev(s.end());
-        while (left < right) {
-            if (!::isalnum(*left))  ++left;
-            else if (!::isalnum(*right)) --right;
-            else if (*left != *right) return false;
-            else { left++, right--; }
-        }
-        return true;
+        if(*begin == '-') return 0-result;
+        tmp = std::pow(10, n) * int(*end - '0');
+        if(INT_MAX - result <= tmp) return 0;
+        result += tmp;
+        return result;
     }
 };
