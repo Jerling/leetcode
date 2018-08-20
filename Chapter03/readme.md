@@ -38,3 +38,15 @@ If no valid conversion could be performed, a zero value is returned. If the corr
 将字符串转换成数字
 
 答案：[c++](code/3.3.hpp)
+
+## 3.4 Add Binary
+描述：  
+Given two binary strings, return their sum (also a binary string).
+For example,
+a = "11" b = "1"
+Return "100".
+
+题意：  
+二进制数相加
+
+答案：[c++](code/3.4.hpp)

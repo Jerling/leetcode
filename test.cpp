@@ -2,8 +2,8 @@
 
 int main(void)
 {
-    std::string str1("123");
-    std::string str2("23");
-    std::cout << Solution().myAtoi(str1) - Solution().myAtoi(str2);
+    std::string str1("11");
+    std::string str2("1");
+    std::cout << MySolution().addBinary(str1,str2);
     return 0;
 }
