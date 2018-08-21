@@ -84,3 +84,27 @@ isMatch("aab", "c*a*b") → true
 题意：  
 对字符串进行正则匹配，实现 '.' 和 '*'的匹配  
 答案：[C++](code/3.6.hpp)
+
+## 3.7 Wildcard Matching
+
+描述
+
+Implement wildcard pattern matching with support for '?' and '*'.
+'?' Matches any single character. '*' Matches any sequence of characters (including the empty sequence).
+The matching should cover the entire input string (not partial).
+The function prototype should be:
+bool isMatch(const char *s, const char *p)
+Some examples:
+isMatch("aa","a") → false
+isMatch("aa","aa") → true
+isMatch("aaa","aa") → false
+isMatch("aa", "*") → true
+isMatch("aa", "a*") → true
+isMatch("ab", "?*") → true
+isMatch("aab", "c*a*b") → false
+
+题意：和上一题类似，把 '.'换成'?'
+
+题目[地址](https://soulmachine.gitbooks.io/algorithm-essentials/content/cpp/string/wildcard-matching.html)
+
+答案：[C++](code/3.7.hpp)
