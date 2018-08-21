@@ -60,3 +60,27 @@ Given a string S, find the longest palindromic substring in S. You may assume th
 题目[地址](https://soulmachine.gitbooks.io/algorithm-essentials/content/cpp/string/longest-palindromic-substring.html)
 
 答案：[c++](code/3.5.hpp)
+
+## 3.6 Regular Expression Matching
+
+描述
+
+Implement regular expression matching with support for '.' and '*'.
+'.' Matches any single character. '*' Matches zero or more of the preceding element.
+The matching should cover the entire input string (not partial).
+The function prototype should be:
+bool isMatch(const char *s, const char *p)
+Some examples:
+isMatch("aa","a") → false
+isMatch("aa","aa") → true
+isMatch("aaa","aa") → false
+isMatch("aa", "a*") → true
+isMatch("aa", ".*") → true
+isMatch("ab", ".*") → true
+isMatch("aab", "c*a*b") → true
+
+题目[地址](https://soulmachine.gitbooks.io/algorithm-essentials/content/cpp/string/regular-expression-matching.html)
+
+题意：  
+对字符串进行正则匹配，实现 '.' 和 '*'的匹配  
+答案：[C++](code/3.6.hpp)
