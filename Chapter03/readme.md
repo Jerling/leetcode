@@ -50,3 +50,13 @@ Return "100".
 二进制数相加
 
 答案：[c++](code/3.4.hpp)
+
+## 3.5 Longest Palindromic Substring
+描述  
+Given a string S, find the longest palindromic substring in S. You may assume that the maximum length of S is 1000, and there exists one unique longest palindromic substring.
+
+题意：  
+
+题目[地址](https://soulmachine.gitbooks.io/algorithm-essentials/content/cpp/string/longest-palindromic-substring.html)
+
+答案：[c++](code/3.5.hpp)

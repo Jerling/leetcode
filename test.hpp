@@ -9,29 +9,15 @@
 // 时间复杂度O(n)，空间复杂度O(1)
 class MySolution {
 public:
-    std::string addBinary(const std::string &str1, const std::string &str2){
-        int l1 = str1.length()-1;
-        int l2 = str2.length()-1;
-        std::string result;
-        int jinwei = 0;
-        while(l1 >= 0 && l2 >=0){
-            result.push_back('0'+(str1[l1] - '0' + str2[l2] - '0' + jinwei)%2);
-            jinwei = (str1[l1] - '0' + str2[l2] - '0' + jinwei)/2;
-            --l1;--l2;
+    std::string longestPalindromicSubstring(const std::string &str){
+        if (!str || str.length() == 1) return str;
+        int max = 0, curlen = 0;
+        int len = str.length();
+        for(int i=1; i < len-1; ++i){
+            if(str[i]==str[i-1]){
+                for(j=1;j<len-i-1 && j<i && str[i-j-i]==str[i+j];++j);
+            }
         }
-        while(l1 >= 0){
-            result.push_back('0' + (str1[l1]-'0'+jinwei)%2);
-            jinwei = (str1[l1]-'0'+jinwei)/2;
-            --l1;
-        }
-        while(l2 >= 0){
-            result.push_back('0' + (str2[l2]-'0'+jinwei)%2);
-            jinwei = (str1[l2]-'0'+jinwei)/2;
-            --l2;
-        }
-        if(jinwei) result.push_back(jinwei+'0');
-        std::reverse(result.begin(),result.end());   // 逆转结果
-        return result;
     }
 };
 
