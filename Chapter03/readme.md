@@ -146,4 +146,18 @@ Input is guaranteed to be within the range from 1 to 3999.
 题意：  
 将整数转换成罗马数字
 
+题目[地址](https://soulmachine.gitbooks.io/algorithm-essentials/content/cpp/string/integer-to-roman.html)
+
 答案：[C++](code/3.10.hpp)
+
+## 3.11 Roman to Integer
+描述:  
+Given a roman numeral, convert it to an integer.
+Input is guaranteed to be within the range from 1 to 3999.
+
+题意:  
+将罗马数字转换为阿拉伯数字
+
+题目[地址](https://soulmachine.gitbooks.io/algorithm-essentials/content/cpp/string/roman-to-integer.html)
+
+答案：[C++](code/3.11.hpp)
