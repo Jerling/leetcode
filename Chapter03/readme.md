@@ -116,4 +116,24 @@ Write a function to find the longest common prefix string amongst an array of st
 题意： 
 找出两个序列的公共最长前缀
 
+题目[地址](https://soulmachine.gitbooks.io/algorithm-essentials/content/cpp/string/longest-common-prefix.html)
+
 答案：[C++](code/3.8.hpp)
+
+## 3.9 alid Number
+描述:  
+Validate if a given string is numeric.
+Some examples:
+"0" => true
+" 0.1 " => true
+"abc" => false
+"1 a" => false
+"2e10" => true
+Note: It is intended for the problem statement to be ambiguous. You should gather all requirements up front before implementing one.
+
+题意：  
+判断给定的字符串是否为数字
+
+题目[地址](https://soulmachine.gitbooks.io/algorithm-essentials/content/cpp/string/valid-number.html)
+
+答案：[C++](code/3.9.hpp)
