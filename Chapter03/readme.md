@@ -137,3 +137,13 @@ Note: It is intended for the problem statement to be ambiguous. You should gathe
 题目[地址](https://soulmachine.gitbooks.io/algorithm-essentials/content/cpp/string/valid-number.html)
 
 答案：[C++](code/3.9.hpp)
+
+## 3.10 Integer to Roman
+描述：  
+Given an integer, convert it to a roman numeral.
+Input is guaranteed to be within the range from 1 to 3999.
+
+题意：  
+将整数转换成罗马数字
+
+答案：[C++](code/3.10.hpp)

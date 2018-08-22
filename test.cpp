@@ -3,7 +3,7 @@
 int main(void)
 {
     std::string str1("12332111");
-    std::string str2("1e2");
-    std::cout << Solution().isNumber(str2) << std::endl;
+    std::string str2("122");
+    std::cout << Solution().intToRoman(123) << std::endl;
     return 0;
 }
