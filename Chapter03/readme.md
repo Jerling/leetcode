@@ -1,4 +1,4 @@
-# 3。字符串
+# 3. 字符串
 ## 3.1 Valid Palindrome
 描述  
 Given a string, determine if it is a palindrome, considering only alphanumeric characters and ignoring cases.
@@ -108,3 +108,12 @@ isMatch("aab", "c*a*b") → false
 题目[地址](https://soulmachine.gitbooks.io/algorithm-essentials/content/cpp/string/wildcard-matching.html)
 
 答案：[C++](code/3.7.hpp)
+
+## 3.8 Longest Common Prefix
+描述：  
+Write a function to find the longest common prefix string amongst an array of strings.
+
+题意： 
+找出两个序列的公共最长前缀
+
+答案：[C++](code/3.8.hpp)
