@@ -2,8 +2,7 @@
 
 int main(void)
 {
-    std::string str1("12332111");
-    std::string str2("122");
-    std::cout << Solution().intToRoman(123) << std::endl;
+    std::string str1("I love china");
+    std::cout << MySolution().LastLengthOfWord(str1) << "\n";
     return 0;
 }

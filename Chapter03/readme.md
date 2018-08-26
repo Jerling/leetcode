@@ -179,3 +179,19 @@ Note: The sequence of integers will be represented as a string.
 题目[地址](https://soulmachine.gitbooks.io/algorithm-essentials/content/cpp/string/count-and-say.html)
 
 答案：[C++](code/3.12.hpp)
+
+
+## 3.16.Length of Last Word
+
+描述
+
+Given a string s consists of upper/lower-case alphabets and empty space characters ' ', return the length of last word in the string.
+If the last word does not exist, return 0.
+Note: A word is defined as a character sequence consists of non-space characters only.
+For example, Given s = "Hello World", return 5.
+
+题意：  
+求字符串最后单词的长度
+
+
+答案：[C++](code/3.16.hpp)
