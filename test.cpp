@@ -2,8 +2,7 @@
 
 int main(void)
 {
-    std::string str1("()())())");
-    std::cout << Solution().longestValidParentheses(str1) << "\n";
-    std::cout << MySolution().LongestValid(str1) << "\n";
+    std::vector<int> v = {2,1,5,6,2,3};
+    std::cout << Solution().largestRectangleArea(v) << "\n";
     return 0;
 }
