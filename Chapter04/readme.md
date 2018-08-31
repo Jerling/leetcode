@@ -23,3 +23,12 @@ Another example is ")()())", where the longest valid parentheses substring is "(
 
 答案：[C++](code/4.1.2.hpp)
 
+### 4.1.3 Largest Rectangle in Histogram
+描述：  
+Given n non-negative integers representing the histogram's bar height where the width of each bar is 1, find the area of largest rectangle in the histogram.
+
+题意:  
+给出一串数字表示高度，宽度都为1，求出最大矩形的面积。
+
+答案:  [C++](code/4.1.3.hpp)
+
