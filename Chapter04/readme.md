@@ -32,3 +32,16 @@ Given n non-negative integers representing the histogram's bar height where the 
 
 答案:  [C++](code/4.1.3.hpp)
 
+### Evaluate Reverse Polish Notation
+
+描述
+
+Evaluate the value of an arithmetic expression in Reverse Polish Notation.
+Valid operators are +, -, *, /. Each operand may be an integer or another expression.
+Some examples:
+  ["2", "1", "+", "3", "*"] -> ((2 + 1) * 3) -> 9
+  ["4", "13", "5", "/", "+"] -> (4 + (13 / 5)) -> 6
+  
+题意： 求解逆波兰式
+
+答案：[C++](code/4.1.4.hpp)
