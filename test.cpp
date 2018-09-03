@@ -7,9 +7,11 @@ int main(void)
     TreeNode *t2 = new TreeNode(2);
     TreeNode *t3 = new TreeNode(3);
     t1->right = t2;
-    t2->left = t3;
-    for(auto v:Solution_2().postorderTraversal(t1)){
-        std::cout << v << "\n";
+    t1->left = t3;
+    for(auto v:MySolution().BinaryTreeLevelOrderTraversal(t1)){
+        for(auto i:v){
+            std::cout << i << "\n";
+        }
     }
     return 0;
 }

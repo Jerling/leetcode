@@ -74,3 +74,23 @@ Note: Recursive solution is trivial, could you do it iteratively?
 题意: 后序遍历
 
 答案：[C++](code/5.1.3.hpp)
+
+### 5.1.4 Binary Tree Level Order Traversal
+描述
+Given a binary tree, return the level order traversal of its nodes' values. (ie, from left to right, level by level).
+For example: Given binary tree {3,9,20,#,#,15,7},
+    3
+   / \
+  9  20
+    /  \
+   15   7
+return its level order traversal as:
+[
+  [3],
+  [9,20],
+  [15,7]
+]
+
+题意：按层次保存
+
+答案：[C++](code/5.1.4.hpp)
