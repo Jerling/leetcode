@@ -133,3 +133,25 @@ You should return [1, 3, 4]
 题意：返回树右边的节点
 
 答案：[C++](code/5.1.6.hpp)
+
+### 5.1.7 Invert Binary Tree
+
+描述
+
+Invert a binary tree.
+     4
+   /   \
+  2     7
+ / \   / \
+1   3 6   9
+to
+
+     4
+   /   \
+  7     2
+ / \   / \
+9   6 3   1
+
+题意：交换树的左右分支
+
+答案：[C++](code/5.1.7.hpp)
