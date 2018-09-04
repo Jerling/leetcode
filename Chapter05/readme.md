@@ -116,3 +116,20 @@ return its bottom-up level order traversal as:
 题意：层次逆序遍历
 
 答案：[C++](code/5.1.5.hpp)
+
+### 5.1.6 Binary Tree Right Side View
+
+描述
+
+Given a binary tree, imagine yourself standing on the right side of it, return the values of the nodes you can see ordered from top to bottom.
+For example, given the following binary tree,
+   1            <---
+ /   \
+2     3         <---
+ \     \
+  5     4       <---
+You should return [1, 3, 4]
+
+题意：返回树右边的节点
+
+答案：[C++](code/5.1.6.hpp)
