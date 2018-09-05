@@ -8,12 +8,9 @@ int main(void)
     TreeNode *t3 = new TreeNode(3);
     t1->right = t2;
     t1->left = t3;
-    for(auto v:MySolution().BinaryTreePreTraversal(t1)){
-        std::cout << v << " ";
-    }
-    std::cout << std::endl;
-    for(auto i:MySolution().BinaryTreePreTraversal(MySolution_2().InvertBinaryTree(t1))){
-        std::cout << i << " ";
+    for(auto v:Solution_2().BinaryTreeZigzagLevel(t1)){
+        for(auto i : v)
+            std::cout << i << " ";
     }
     return 0;
 }
