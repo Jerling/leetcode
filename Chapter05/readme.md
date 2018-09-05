@@ -165,7 +165,6 @@ You should return [1, 3, 4]
 答案：[C++](code/5.1.6.hpp)
 
 ### 5.1.7 Invert Binary Tree
-   ```
 
 描述
 
@@ -217,3 +216,18 @@ return its zigzag level order traversal as:
 题意：之字形层次访问
 
 答案：[C++](code/5.1.9.hpp)
+
+### 5.1.10 Recover Binary Search Tree
+
+描述
+
+Two elements of a binary search tree (BST) are swapped by mistake.
+Recover the tree without changing its structure.
+Note: A solution using O(n) space is pretty straight forward. Could you devise a constant space solution?
+
+题意：修复损坏的BST
+
+分析
+
+O(logn)空间的解法是，中序递归遍历，用两个指针存放在遍历过程中碰到的两处逆向的位置。
+本题要求O(1)空间，只能用Morris中序遍历。
