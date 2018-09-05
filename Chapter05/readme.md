@@ -22,11 +22,15 @@ struct TreeNode {
 
 Given a binary tree, return the preorder traversal of its nodes' values.
 For example: Given binary tree {1,#,2,3},
+
+ ``` cpp-objdump
  1
   \
    2
   /
  3
+ ```
+
 return [1,2,3].
 Note: Recursive solution is trivial, could you do it iteratively?
 
@@ -43,11 +47,15 @@ Note: Recursive solution is trivial, could you do it iteratively?
 Given a binary tree, return the inorder traversal of its nodes' values.
 For example:
 Given binary tree {1,#,2,3},
+
+ ``` cpp-objdump
  1
   \
    2
   /
  3
+ ```
+
 return [1,3,2].
 Note: Recursive solution is trivial, could you do it iteratively?
 
@@ -63,11 +71,15 @@ Note: Recursive solution is trivial, could you do it iteratively?
 
 Given a binary tree, return the postorder traversal of its nodes' values.
 For example: Given binary tree {1,#,2,3},
+
+ ``` cpp-objdump
  1
   \
    2
   /
  3
+ ```
+
 return [3,2,1].
 Note: Recursive solution is trivial, could you do it iteratively?
 
@@ -79,17 +91,24 @@ Note: Recursive solution is trivial, could you do it iteratively?
 描述
 Given a binary tree, return the level order traversal of its nodes' values. (ie, from left to right, level by level).
 For example: Given binary tree {3,9,20,#,#,15,7},
+
+    ``` cpp-objdump
     3
    / \
   9  20
     /  \
    15   7
+    ```
+
 return its level order traversal as:
+
+``` cpp-objdump
 [
   [3],
   [9,20],
   [15,7]
 ]
+```
 
 题意：按层次保存
 
@@ -101,17 +120,24 @@ return its level order traversal as:
 
 Given a binary tree, return the bottom-up level order traversal of its nodes' values. (ie, from left to right, level by level from leaf to root).
 For example: Given binary tree {3,9,20,#,#,15,7},
+
+    ``` cpp-objdump
     3
    / \
   9  20
     /  \
    15   7
+    ```
+
 return its bottom-up level order traversal as:
+
+``` cpp-objdump
 [
   [15,7]
   [9,20],
   [3],
 ]
+```
 
 题意：层次逆序遍历
 
@@ -123,11 +149,15 @@ return its bottom-up level order traversal as:
 
 Given a binary tree, imagine yourself standing on the right side of it, return the values of the nodes you can see ordered from top to bottom.
 For example, given the following binary tree,
+
+   ``` cpp-objdump
    1            <---
  /   \
 2     3         <---
  \     \
   5     4       <---
+   ```
+
 You should return [1, 3, 4]
 
 题意：返回树右边的节点
@@ -135,10 +165,13 @@ You should return [1, 3, 4]
 答案：[C++](code/5.1.6.hpp)
 
 ### 5.1.7 Invert Binary Tree
+   ```
 
 描述
 
 Invert a binary tree.
+
+     ``` cpp-objdump
      4
    /   \
   2     7
@@ -151,6 +184,7 @@ to
   7     2
  / \   / \
 9   6 3   1
+     ```
 
 题意：交换树的左右分支
 
@@ -163,17 +197,22 @@ to
 Given a binary tree, return the zigzag level order traversal of its nodes' values. (ie, from left to right, then right to left for the next level and alternate between).
 For example:
 Given binary tree {3,9,20,#,#,15,7},
+```
     3
    / \
   9  20
     /  \
    15   7
+```
 return its zigzag level order traversal as:
+
+``` cpp-objdump
 [
   [3],
   [20,9],
   [15,7]
 ]
+```
 
 题意：之字形层次访问
 
