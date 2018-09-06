@@ -92,13 +92,13 @@ Note: Recursive solution is trivial, could you do it iteratively?
 Given a binary tree, return the level order traversal of its nodes' values. (ie, from left to right, level by level).
 For example: Given binary tree {3,9,20,#,#,15,7},
 
-    ``` cpp-objdump
+``` cpp-objdump
     3
    / \
   9  20
     /  \
    15   7
-    ```
+```
 
 return its level order traversal as:
 
@@ -121,13 +121,13 @@ return its level order traversal as:
 Given a binary tree, return the bottom-up level order traversal of its nodes' values. (ie, from left to right, level by level from leaf to root).
 For example: Given binary tree {3,9,20,#,#,15,7},
 
-    ``` cpp-objdump
+``` cpp-objdump
     3
    / \
   9  20
     /  \
    15   7
-    ```
+```
 
 return its bottom-up level order traversal as:
 
@@ -150,13 +150,13 @@ return its bottom-up level order traversal as:
 Given a binary tree, imagine yourself standing on the right side of it, return the values of the nodes you can see ordered from top to bottom.
 For example, given the following binary tree,
 
-   ``` cpp-objdump
+``` cpp-objdump
    1            <---
  /   \
 2     3         <---
  \     \
   5     4       <---
-   ```
+```
 
 You should return [1, 3, 4]
 
@@ -170,7 +170,7 @@ You should return [1, 3, 4]
 
 Invert a binary tree.
 
-     ``` cpp-objdump
+``` cpp-objdump
      4
    /   \
   2     7
@@ -183,7 +183,7 @@ to
   7     2
  / \   / \
 9   6 3   1
-     ```
+```
 
 题意：交换树的左右分支
 
@@ -196,7 +196,7 @@ to
 Given a binary tree, return the zigzag level order traversal of its nodes' values. (ie, from left to right, then right to left for the next level and alternate between).
 For example:
 Given binary tree {3,9,20,#,#,15,7},
-```
+```cpp
     3
    / \
   9  20
@@ -231,3 +231,14 @@ Note: A solution using O(n) space is pretty straight forward. Could you devise a
 
 O(logn)空间的解法是，中序递归遍历，用两个指针存放在遍历过程中碰到的两处逆向的位置。
 本题要求O(1)空间，只能用Morris中序遍历。
+
+### 5.1.12 Same Tree
+
+描述
+
+Given two binary trees, write a function to check if they are equal or not.
+Two binary trees are considered equal if they are structurally identical and the nodes have the same value.
+
+题意：判断两个二叉树是否相同
+
+答案：[C++](code/5.1.12.hpp)
