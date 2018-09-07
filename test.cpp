@@ -7,9 +7,9 @@ int main(void)
     TreeNode *t2 = new TreeNode(2);
     TreeNode *t3 = new TreeNode(2);
     t1->right = t2;
-    t1->left = t3;
+    t2->right = t3;
 
-    std::cout << MySolution().isSymmetricTree(t1) << "\n";
+    std::cout << MySolution().isBalanceBinaryTree(t1) << "\n";
 
     return 0;
 }
