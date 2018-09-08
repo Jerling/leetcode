@@ -278,3 +278,38 @@ For this problem, a height-balanced binary tree is defined as a binary tree in w
 题意: 高度平衡二叉树
 
 答案：[C++](code/5.1.14.hpp)
+
+### 5.1.14 Flatten Binary Tree to Linked List
+
+描述
+
+Given a binary tree, flatten it to a linked list in-place.
+For example, Given
+
+``` cpp-objdump
+         1
+        / \
+       2   5
+      / \   \
+     3   4   6
+```
+
+The flattened tree should look like:
+
+``` cpp-objdump
+   1
+    \
+     2
+      \
+       3
+        \
+         4
+          \
+           5
+            \
+             6
+```
+
+题意：将二叉树展平
+
+答案：[C++](code/5.1.15.hpp)
