@@ -10,8 +10,8 @@ int main(void)
     t1->right = t3;
 
     std::cout<<t1->right->val;
-    MySolution().FlattenBinaryTree2LinkedList(t1);
-    std::cout<<t2->right->val;
+    MySolution().next_right_2(t1);
+    std::cout<<t2->next_right->val;
 
     return 0;
 }
