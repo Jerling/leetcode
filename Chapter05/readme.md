@@ -340,3 +340,19 @@ After calling your function, the tree should look like:
      / \    \
     4-> 5 -> 7 -> NULL
 ```
+
+题意：将二叉树的每一层用next指针链接起来
+
+答案：[C++](code/5.1.16.hpp)
+
+## 5.2. 二叉树的构建
+### 5.2.1 Construct Binary Tree from Preorder and Inorder Traversal
+
+描述
+
+Given preorder and inorder traversal of a tree, construct the binary tree.
+Note: You may assume that duplicates do not exist in the tree.
+
+题意：根据先序和中序构建二叉树
+
+答案：[C++](code/5.2.1.hpp)
