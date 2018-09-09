@@ -356,3 +356,13 @@ Note: You may assume that duplicates do not exist in the tree.
 题意：根据先序和中序构建二叉树
 
 答案：[C++](code/5.2.1.hpp)
+
+### 5.2.2 Construct Binary Tree from Inorder and Postorder Traversal
+
+描述
+
+Given inorder and postorder traversal of a tree, construct the binary tree.+
+
+Note: You may assume that duplicates do not exist in the tree.
+
+题意：使用中序和后序构建二叉树
