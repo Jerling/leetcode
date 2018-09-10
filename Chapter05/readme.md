@@ -366,3 +366,42 @@ Given inorder and postorder traversal of a tree, construct the binary tree.+
 Note: You may assume that duplicates do not exist in the tree.
 
 题意：使用中序和后序构建二叉树
+
+## 5.3. 二叉查找树
+### 5.3.1 Unique Binary Search Trees
+
+描述
+
+Given n, how many structurally unique BST's (binary search trees) that store values 1...n?
+For example, Given n = 3, there are a total of 5 unique BST's.
+
+   ``` cpp-objdump
+   1         3     3      2      1
+    \       /     /      / \      \
+     3     2     1      1   3      2
+    /     /       \                 \
+   2     1         2                 3
+   ```
+   
+题意：求1-n之间有多少颗二叉查找树
+
+答案：[C++](code/5.3.1.hpp) [https://soulmachine.gitbooks.io/algorithm-essentials/content/cpp/binary-tree/bst/unique-binary-search-trees.html](https://soulmachine.gitbooks.io/algorithm-essentials/content/cpp/binary-tree/bst/unique-binary-search-trees.html)
+
+### 5.3.2 Unique Binary Search Trees II
+
+描述
+
+Given n, generate all structurally unique BST's (binary search trees) that store values 1...n.
+For example, Given n = 3, your program should return all 5 unique BST's shown below.
+
+   ``` cpp-objdump
+   1         3     3      2      1
+    \       /     /      / \      \
+     3     2     1      1   3      2
+    /     /       \                 \
+   2     1         2                 3
+   ```
+   
+题意：生成所有的二叉查找树
+
+答案：[C++](code/5.3.2.hpp) [https://soulmachine.gitbooks.io/algorithm-essentials/content/cpp/binary-tree/bst/unique-binary-search-trees-ii.html](https://soulmachine.gitbooks.io/algorithm-essentials/content/cpp/binary-tree/bst/unique-binary-search-trees-ii.html)
