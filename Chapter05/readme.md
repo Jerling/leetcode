@@ -405,3 +405,17 @@ For example, Given n = 3, your program should return all 5 unique BST's shown be
 题意：生成所有的二叉查找树
 
 答案：[C++](code/5.3.2.hpp) [https://soulmachine.gitbooks.io/algorithm-essentials/content/cpp/binary-tree/bst/unique-binary-search-trees-ii.html](https://soulmachine.gitbooks.io/algorithm-essentials/content/cpp/binary-tree/bst/unique-binary-search-trees-ii.html)
+
+### 5.3.3 Validate Binary Search Tree
+
+描述
+
+Given a binary tree, determine if it is a valid binary search tree (BST).
+Assume a BST is defined as follows:
+The left subtree of a node contains only nodes with keys less than the node's key.
+The right subtree of a node contains only nodes with keys greater than the node's key.
+Both the left and right subtrees must also be binary search trees.
+
+题意：判断二叉树是否为BST
+
+答案：[C++](code/5.3.3.hpp)

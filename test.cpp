@@ -3,13 +3,12 @@
 int main(void)
 {
 
-    std::vector<int> preorder;
-    for (int i=1; i<4; ++i) preorder.push_back(i);
-    std::vector<int> inorder = preorder;
-    std::swap(inorder[0], inorder[1]);
-    std::cout << preorder[0] << " " << inorder[0] << "\n";
-    TreeNode *root =  Solution().buildTree(preorder, inorder);
-    std::cout << root->left->val << std::endl;
+    TreeNode *t1 = new TreeNode(1);
+    TreeNode *t2 = new TreeNode(2);
+    TreeNode *t3 = new TreeNode(3);
+    t2->left = t1;
+    t2->right = t3;
 
+    std::cout << MySolution().isBST(t1) << "\n";
     return 0;
 }
