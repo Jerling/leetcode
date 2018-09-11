@@ -429,3 +429,13 @@ Given an array where elements are sorted in ascending order, convert it to a hei
 题意：将给定的有序序列转换成平衡 BST
 
 答案：[C++](code/5.3.4.hpp)
+
+### 5.3.5 Convert Sorted List to Binary Search Tree
+
+描述
+
+Given a singly linked list where elements are sorted in ascending order, convert it to a height balanced BST.
+
+题意：将单链表构建成平衡BST
+
+答案：[C++](code/5.3.5) [https://soulmachine.gitbooks.io/algorithm-essentials/content/cpp/binary-tree/bst/convert-sorted-list-to-binary-search-tree.html](https://soulmachine.gitbooks.io/algorithm-essentials/content/cpp/binary-tree/bst/convert-sorted-list-to-binary-search-tree.html)
