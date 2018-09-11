@@ -9,6 +9,13 @@ int main(void)
     t2->left = t1;
     t2->right = t3;
 
-    std::cout << MySolution().isBST(t1) << "\n";
+    std::vector<int> v;
+    for(int i=0; i<10; v.push_back(i), ++i);
+
+    TreeNode *root = Solution().sortedArrayToBST(v);
+    std::cout << root->val << std::endl;
+    std::cout << root->left->val << std::endl;
+    std::cout << root->right->val << std::endl;
+
     return 0;
 }

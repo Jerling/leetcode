@@ -419,3 +419,13 @@ Both the left and right subtrees must also be binary search trees.
 题意：判断二叉树是否为BST
 
 答案：[C++](code/5.3.3.hpp)
+
+### 5.3.4 Convert Sorted Array to Binary Search Tree
+
+描述
+
+Given an array where elements are sorted in ascending order, convert it to a height balanced BST.
+
+题意：将给定的有序序列转换成平衡 BST
+
+答案：[C++](code/5.3.4.hpp)
