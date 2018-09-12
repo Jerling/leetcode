@@ -439,3 +439,25 @@ Given a singly linked list where elements are sorted in ascending order, convert
 题意：将单链表构建成平衡BST
 
 答案：[C++](code/5.3.5) [https://soulmachine.gitbooks.io/algorithm-essentials/content/cpp/binary-tree/bst/convert-sorted-list-to-binary-search-tree.html](https://soulmachine.gitbooks.io/algorithm-essentials/content/cpp/binary-tree/bst/convert-sorted-list-to-binary-search-tree.html)
+
+### 5.3.6 LCA of BST
+
+描述
+
+Given a binary search tree (BST), find the lowest common ancestor (LCA) of two given nodes in the BST.
+
+      ``` cpp-objdump
+      _______6______
+       /              \
+    ___2__          ___8__
+   /      \        /      \
+   1      _4       7       9
+         /  \
+         3   5
+      ```
+
+For example, the lowest common ancestor (LCA) of nodes 2 and 8 is 6. Another example is LCA of nodes 2 and 4 is 2, since a node can be a descendant of itself according to the LCA definition.
+
+题意：寻找最小的共同祖先
+
+答案：[C++](code/5.3.6.hpp) && [https://soulmachine.gitbooks.io/algorithm-essentials/content/cpp/binary-tree/bst/lca-of-bst.html](https://soulmachine.gitbooks.io/algorithm-essentials/content/cpp/binary-tree/bst/lca-of-bst.html)
