@@ -461,3 +461,26 @@ For example, the lowest common ancestor (LCA) of nodes 2 and 8 is 6. Another exa
 题意：寻找最小的共同祖先
 
 答案：[C++](code/5.3.6.hpp) && [https://soulmachine.gitbooks.io/algorithm-essentials/content/cpp/binary-tree/bst/lca-of-bst.html](https://soulmachine.gitbooks.io/algorithm-essentials/content/cpp/binary-tree/bst/lca-of-bst.html)
+
+### 5.3.7 Kth Smallest Element in a BST
+描述
+
+Given a binary search tree, write a function kthSmallest to find the kth smallest element in it.
+
+Note:
+
+You may assume k is always valid, 1 ≤ k ≤ BST's total elements.
+
+Follow up:
+
+What if the BST is modified (insert/delete operations) often and you need to find the kth smallest frequently? How would you optimize the kthSmallest routine?
+
+Hint:
+
+    Try to utilize the property of a BST.
+    What if you could modify the BST node's structure?
+    The optimal runtime complexity is O(height of BST).
+
+题意：寻找第k个最小值
+
+答案：[C++](code/5.3.7.hpp)
