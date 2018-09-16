@@ -12,6 +12,6 @@ int main(void)
     t2->right = t3;
     t1->left = t5;
     t1->right = t4;
-    std::cout << MySolution().miniDepth(t2)<< "\n";
+    std::cout << Solution_1().maxDepth(t2)<< "\n";
     return 0;
 }

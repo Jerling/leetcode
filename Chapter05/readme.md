@@ -491,3 +491,15 @@ Hint:
 Given a binary tree, find its minimum depth.
 The minimum depth is the number of nodes along the shortest path from the root node down to the nearest leaf node.
 
+题意： 找最小的深度
+
+答案: [c++](code/5.4.1.hpp)
+
+### 5.4.2 Maximum Depth of Binary Tree
+描述  
+Given a binary tree, find its maximum depth.
+The maximum depth is the number of nodes along the longest path from the root node down to the farthest leaf node.
+
+题意：寻找最大深度
+
+答案：[C++](code/5.4.2.hpp)
