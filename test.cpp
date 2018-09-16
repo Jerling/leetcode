@@ -10,7 +10,8 @@ int main(void)
     TreeNode *t5 = new TreeNode(5);
     t2->left = t1;
     t2->right = t3;
-    t3->left = t4;
     t1->left = t5;
+    t1->right = t4;
+    std::cout << MySolution().miniDepth(t2)<< "\n";
     return 0;
 }
