@@ -12,6 +12,11 @@ int main(void)
     t2->right = t3;
     t1->left = t5;
     t1->right = t4;
-    std::cout << Solution().hasPathSum(t2, 5)<< "\n";
+    std::vector<std::vector<int> > result;
+    result = Solution().pathSum(t2, 5);
+    for(auto i : result){
+        for( auto v : i)
+            std::cout << v << "\n";
+    }
     return 0;
 }
