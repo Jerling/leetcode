@@ -553,3 +553,17 @@ return
 ]
 ```
 
+### 5.4.5 Binary Tree Maximum Path Sum
+描述  
+Given a binary tree, find the maximum path sum.
+The path may start and end at any node in the tree. For example: Given the below binary tree,
+```cpp
+  1
+ / \
+2   3
+```
+Return 6
+
+题意：找出任意两个节点之间最大距离的路径
+
+答案： [https://soulmachine.gitbooks.io/algorithm-essentials/content/cpp/binary-tree/recursion/binary-tree-maximum-path-sum.html](https://soulmachine.gitbooks.io/algorithm-essentials/content/cpp/binary-tree/recursion/binary-tree-maximum-path-sum.html)
