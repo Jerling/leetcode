@@ -10,7 +10,7 @@ int main(void)
     ListNode* t6 = new ListNode(9);
     t1->next = t2;t2->next = t3;
     t4->next = t5;t5->next = t6;
-    auto tmp = MySolution().MergeTwoSortedArrays(t1, t4);
+    auto tmp = MySolution().MergeListed(t1, t4);
     while(tmp){
         std::cout << tmp->val << "\n";
         tmp=tmp->next;
