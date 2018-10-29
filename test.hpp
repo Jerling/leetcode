@@ -2,35 +2,27 @@
 #include <algorithm>
 #include <vector>
 
-class MySolution
-{
+// First Missing Positive
+// 时间复杂度O(n)，空间复杂度O(1)
+class Solution {
 public:
-    int k_th_largest_element(std::vector<int>& vec, int k){
-        quick_sort(vec, 0, vec.size()-1, k);
-        return vec[vec.size() - k];
+    int firstMissingPositive(std::vector<int>& nums) {
+        bucket_sort(nums);
+
+        for (int i = 0; i < nums.size(); ++i)
+            if (nums[i] != (i + 1))
+                return i + 1;
+        return nums.size() + 1;
     }
 private:
-    int quick_sort(std::vector<int>& vec, int start, int end, int k){
-        if(start < end){
-            int mid = partition(vec, start, end);
-            if(mid+k == (int) vec.size()) return vec[mid];
-            quick_sort(vec, start, mid - 1, k);
-            quick_sort(vec, mid + 1, end, k);
-        }
-    }
-    int partition(std::vector<int>& vec, int start, int end){
-        auto part = vec[start];
-        while(start < end){
-            while(vec[end] >= part && start < end){
-                --end;
+    static void bucket_sort(std::vector<int>& A) {
+        const int n = A.size();
+        for (int i = 0; i < n; i++) {
+            while (A[i] != i + 1) {
+                if (A[i] <= 0 || A[i] > n || A[i] == A[A[i] - 1])
+                    break;
+                std::swap(A[i], A[A[i] - 1]);
             }
-            if(start < end) vec[start++] = vec[end];
-            while(vec[start] <= part && start < end){
-                ++start;
-            }
-            if(start < end) vec[--end] = vec[start];
         }
-        vec[start] = part;
-        return start;
     }
 };
