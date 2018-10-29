@@ -55,3 +55,27 @@ Could you come up with an one-pass algorithm using only constant space?
 第3种思路，利用快速排序里 partition 的思想，第一次将数组按0分割，第二次按1分割，排序完毕，可以推广到n种颜色，每种颜色有重复元素的情况。
 
 答案：[C++](code/6.3.1.hpp)
+
+### 6.3.2 Kth Largest Element in an Array
+描述
+Find the k-th largest element in an unsorted array.
+For example, given [3,2,1,5,6,4] and k = 2, return 5.
+Note:
+You may assume k is always valid, 1 ≤ k ≤ array's length.
+分析
+- 这题是一道很好的面试题目，
+- 题目短小，很快就能说清题意
+- 有很多种解法。从简单到复杂的解法都有，梯度均匀。
+- 不需要预先知道特殊领域知识。
+- 这题有很多思路：
+- 按从大到小全排序，然后取第k个元素，时间复杂度O(nlogn)，空间复杂度O(1)
+- 利用堆进行部分排序。维护一个大根堆，将数组元素全部压入堆，然后弹出k次，第k个就是答案。时间复杂度O(klogn)，空间复杂度O(n)
+- 选择排序，第k次选择后即可得到第k大的数，时间复杂度O(nk)，空间复杂度O(1)
+- 堆排序，维护一个k大小的小根堆，将数组中的每个元素与堆顶元素进行比较，如果比堆顶元素大，则删除堆顶元素并添加该元素，如果比堆顶元素小，则什么也不做，继续下一个元素。时间复杂度O(nlogk)，空间复杂度O(k)。
+- 利用快速排序中的partition思想，从数组中随机选择一个元素x，把数组划分为前后两部分sa和sb，sa中的元素小于x，sb中的元素大于或等于x。这时有两种情况：
+- sa的元素个数小于k，则递归求解sb中的第k-|sa|大的元素
+- sa的元素个数大于或等于k，则递归求解sa中的第k大的元素
+- 时间复杂度O(n)，空间复杂度O(1)
+- 思路4和5比较高效，可以接受，其他思路太慢了，不采纳。
+
+答案：[C++](code/6.3.2.hpp)
