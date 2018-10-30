@@ -2,9 +2,8 @@
 
 int main(void)
 {
-    std::vector<int> v{1,2,0};
-    auto print = [](auto a){std::cout << a << " ";};
-    std::cout << Solution().firstMissingPositive(v) << "\n";
-    for_each(v.begin(), v.end(), print);
+    std::vector<int> v{5, 7, 7, 8, 8, 10};
+    std::vector<int> r = MySolution().search_a_range(v, 7);
+    for_each(r.begin(), r.end(), print);
     return 0;
 }
