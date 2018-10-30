@@ -2,8 +2,8 @@
 
 int main(void)
 {
-    std::vector<int> v{5, 7, 7, 8, 8, 10};
-    std::vector<int> r = MySolution().search_a_range(v, 7);
-    for_each(r.begin(), r.end(), print);
+    std::vector<int> v{5, 6, 7, 8, 9, 10};
+    int r = Solution().search_insert_position(v, 9);
+    std::cout << r << "\n";
     return 0;
 }
