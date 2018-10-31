@@ -37,3 +37,22 @@ You are given a target value to search. If found in the array return its index, 
 You may assume no duplicate exists in the array.
 
 答案：[C++](code/7.3.hpp)
+
+## 7.4 Search in Rotated Sorted Array II
+描述
+
+Follow up for "Search in Rotated Sorted Array": What if duplicates are allowed?
+
+Would this affect the run-time complexity? How and why?
+
+Write a function to determine if a given target is in the array.
+分析
+
+允许重复元素，则上一题中如果A[left] <= A[mid],那么[left,mid]为递增序列的假设就不能成立了，比如[1,3,1,1,1]。
+
+既然A[left] <= A[mid]不能确定递增，那就把它拆分成两个条件：
+
+    若A[left] < A[mid]，则区间[left,mid]一定递增
+    若A[left] == A[mid] 确定不了，那就left++，往下看一步即可。
+
+答案：[C++](code/7.4.hpp)
