@@ -34,7 +34,7 @@ public:
 // 时间复杂度O(logn)，空间复杂度O(1)
 class Solution {
 public:
-    bool searchMatrix(const vector<vector<int>>& matrix, int target) {
+    bool searchMatrix(const std::vector<std::vector<int>>& matrix, int target) {
         if (matrix.empty()) return false;
         const size_t  m = matrix.size();
         const size_t n = matrix.front().size();

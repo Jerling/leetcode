@@ -67,12 +67,46 @@ Write an efficient algorithm that searches for a value in an m × n matrix. This
 
 For example, Consider the following matrix:
 
+``` cpp-objdump
 [
   [1,   3,  5,  7],
   [10, 11, 16, 20],
   [23, 30, 34, 50]
 ]
+```
 
 Given target = 3, return true.
 
 答案：[C++](code/7.5.hpp)
+
+## 7.6. Search a 2D Matrix II
+描述
+
+Write an efficient algorithm that searches for a value in an m x n matrix. This matrix has the following properties:
+
+    Integers in each row are sorted in ascending from left to right.
+    Integers in each column are sorted in ascending from top to bottom.
+
+For example,
+
+Consider the following matrix:
+
+``` cpp-objdump
+[
+  [1,   4,  7, 11, 15],
+  [2,   5,  8, 12, 19],
+  [3,   6,  9, 16, 22],
+  [10, 13, 14, 17, 24],
+  [18, 21, 23, 26, 30]
+]
+```
+
+Given target = 5, return true.
+
+Given target = 20, return false.
+
+分析
+
+从右上角开始, 比较target 和 matrix[i][j]的值。如果小于target, 则该行不可能有此数, 所以i++; 如果大于target, 则该列不可能有此数, 所以j--。遇到边界则表明该矩阵不含target.
+
+答案：[C++](code/7.6.hpp)
