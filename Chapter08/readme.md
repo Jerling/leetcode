@@ -50,3 +50,12 @@ Elements in a subset must be in non-descending order. The solution set must not 
 这题有重复元素，但本质上，跟上一题很类似，上一题中元素没有重复，相当于每个元素只能选0或1次，这里扩充到了每个元素可以选0到若干次而已。
 
 答案：[C++](code/8.2.hpp)
+
+## 8.3 Permutations
+描述
+
+Given a collection of numbers, return all possible permutations.
+
+For example, [1,2,3] have the following permutations: [1,2,3], [1,3,2], [2,1,3], [2,3,1], [3,1,2], and [3,2,1].
+
+答案：[C++](code/8.3.hpp)
