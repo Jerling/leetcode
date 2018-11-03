@@ -94,3 +94,18 @@ For example, If n = 4 and k = 2, a solution is:
 ```
 
 答案：[C++](code/8.5.hpp)
+
+## 8.6 Letter Combinations of a Phone Number
+描述
+
+Given a digit string, return all possible letter combinations that the number could represent.
+
+A mapping of digit to letters (just like on the telephone buttons) is given below.
+
+Input:Digit string "23"
+
+Output: ["ad", "ae", "af", "bd", "be", "bf", "cd", "ce", "cf"].
+
+Note: Although the above answer is in lexicographical order, your answer could be in any order you want.
+
+答案：[C++](code/8.6.hpp)
