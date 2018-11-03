@@ -59,3 +59,38 @@ Given a collection of numbers, return all possible permutations.
 For example, [1,2,3] have the following permutations: [1,2,3], [1,3,2], [2,1,3], [2,3,1], [3,1,2], and [3,2,1].
 
 答案：[C++](code/8.3.hpp)
+
+## 8.4 Permutations II
+描述
+
+Given a collection of numbers that might contain duplicates, return all possible unique permutations.
+
+For example, [1,1,2] have the following unique permutations: [1,1,2], [1,2,1], and [2,1,1].
+next_permutation()
+
+直接使用std::next_permutation()，代码与上一题相同。
+重新实现next_permutation()
+
+重新实现std::next_permutation()，代码与上一题相同。
+
+答案：[C++](code/8.4.hpp)
+
+## 8.5 Combinations
+描述
+
+Given two integers n and k, return all possible combinations of k numbers out of 1 ... n.
+
+For example, If n = 4 and k = 2, a solution is:
+
+``` cpp-objdump
+[
+  [2,4],
+  [3,4],
+  [2,3],
+  [1,2],
+  [1,3],
+  [1,4],
+]
+```
+
+答案：[C++](code/8.5.hpp)
