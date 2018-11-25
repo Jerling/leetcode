@@ -27,4 +27,24 @@ $$
 f[i] = max(f[i-1], A[i-1])-1, i > 0
 $$
 ```
+答案: [C++](code/1.hpp)
 
+## Jump Game 2
+```latex
+\subsubsection{描述}
+Given an array of non-negative integers, you are initially positioned at the first index of the array.
+
+Each element in the array represents your maximum jump length at that position.
+
+Your goal is to reach the last index in the minimum number of jumps.
+
+For example:
+Given array \code{A = [2,3,1,1,4]}
+
+The minimum number of jumps to reach the last index is 2. (Jump 1 step from index 0 to 1, then 3 steps to the last index.)
+
+
+\subsubsection{分析}
+贪心法。
+```
+答案：[C++](code/12.1.hpp)
