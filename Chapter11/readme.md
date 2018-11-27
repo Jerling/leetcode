@@ -81,3 +81,8 @@ Given a string, find the length of the longest substring without repeating chara
 从左往右扫描，当遇到重复字母时，以上一个重复字母的index+1，作为新的搜索起始位置，直到最后一个字母，复杂度是O(n)。如下图所示。
 
 答案：[C++](code/12.5.hpp)
+
+## Container With Most Water ##
+
+描述
+https://soulmachine.gitbooks.io/algorithm-essentials/content/cpp/greedy/container-with-most-water.html
