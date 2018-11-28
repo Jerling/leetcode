@@ -75,3 +75,15 @@ Note that there may be more than one LIS combination, it is only necessary for y
 return the length.
 Your algorithm should run in O(n^2) complexity.
 Follow up: Could you improve it to O(n log n) time complexity?
+
+答案： [C++](code/13.4.hpp) [https://soulmachine.gitbooks.io/algorithm-essentials/content/cpp/dp/longest-increasing-subsequence.html](https://soulmachine.gitbooks.io/algorithm-essentials/content/cpp/dp/longest-increasing-subsequence.html)
+
+
+## Palindrome Partitioning II ##
+
+描述
+Given a string s, partition s such that every substring of the partition is a palindrome.
+Return the minimum cuts needed for a palindrome partitioning of s.
+For example, given s = "aab",
+Return 1 since the palindrome partitioning ["aa","b"] could be produced using 1 cut.
+答案：[https://soulmachine.gitbooks.io/algorithm-essentials/content/cpp/dp/palindrome-partitioning-ii.html](https://soulmachine.gitbooks.io/algorithm-essentials/content/cpp/dp/palindrome-partitioning-ii.html)
