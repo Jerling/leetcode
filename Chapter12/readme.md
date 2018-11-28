@@ -49,3 +49,17 @@ $$
 - 思路4：分治法，把序列分为两段，分别求最大连续子序列和，然后归并，复杂度O(nlog n)
 - 思路5：把思路2O(n^2)的代码稍作处理，得到O(n)的算法
 - 思路6：当成M=1的最大M子段和
+
+答案： [C++](code/13.2.hpp)
+
+## Maximum Product Subarray ##
+描述
+Find the contiguous subarray within an array (containing at least one number) which has
+the largest product.
+For example, given the array [2,3,-2,4], the contiguous subarray [2,3] has the largest
+product = 6.
+分析
+这题跟“最大连续子序列和”非常类似，只不过变成了“最大连续子序列积”，所以解决思路也很类似。
+仅仅有一个小细节需要注意，就是负负得正，两个负数的乘积是正数，因此我们不仅要跟踪最大值，还要跟踪最小值。
+
+答案： [C++](code/13.3.hpp)
