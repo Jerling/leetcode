@@ -87,3 +87,9 @@ Return the minimum cuts needed for a palindrome partitioning of s.
 For example, given s = "aab",
 Return 1 since the palindrome partitioning ["aa","b"] could be produced using 1 cut.
 答案：[https://soulmachine.gitbooks.io/algorithm-essentials/content/cpp/dp/palindrome-partitioning-ii.html](https://soulmachine.gitbooks.io/algorithm-essentials/content/cpp/dp/palindrome-partitioning-ii.html)
+
+## Maximal Rectangle ##
+
+描述
+Given a 2D binary matrix filled with 0's and 1's, find the largest rectangle containing all ones and return its area.
+答案：[C++](code/13.6.hpp)
